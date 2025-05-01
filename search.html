@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Files</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="performance.html">Performance</a></li>
+        </ul>
+    </nav>
+    
+    <div class="search-container">
+        <h2>Search in Encrypted Files</h2>
+        <div class="search-box">
+            <input type="text" id="searchInput" class="search-input" placeholder="Enter a name or value...">
+            <button class="btn" onclick="performSearch()">Search</button>
+        </div>
+        <div id="searchResults" class="search-results">
+            <p>Search results will appear here...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

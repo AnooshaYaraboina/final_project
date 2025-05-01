@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="performance.html">Performance</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="auth-box">
+            <h2 id="auth-title">Login</h2>
+            <form id="auth-form">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Full Name" class="hidden">
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+            <p class="toggle-text">Don't have an account? <span id="toggle-auth">Sign up</span></p>
+        </div>
+    </div>
+    <script>
+        document.getElementById("auth-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            window.location.href = "dashboard.html";
+        });
+    </script>
+</body>
+</html>

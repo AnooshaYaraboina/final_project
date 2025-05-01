@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload File</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Optional Navbar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="upload.html">Upload</a></li>
+      <li><a href="search.html">Search</a></li>
+    </ul>
+  </nav>
+
+  <!-- Upload Section -->
+  <div class="upload-container">
+    <h2>Upload Encrypted File</h2>
+    <form id="uploadForm">
+      <input type="file" id="file" name="file" required />
+      <button type="submit" class="btn">Upload</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    document.getElementById('uploadForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const fileInput = document.getElementById('file');
+      const formData = new FormData();
+      formData.append('file', fileInput.files[0]);
+
+      try {
+        const res = await fetch('https://127.0.0.1:5000/upload', {
+          method: 'POST',
+          body: formData
+        });
+        const data = await res.json();
+        document.getElementById('result').innerHTML = 
+          `✅ File uploaded! <a href="${data.download_url}" target="_blank">Download Here</a>`;
+      } catch (err) {
+        document.getElementById('result').textContent = '❌ Upload failed.';
+        console.error(err);
+      }
+    });
+  </script>
+</body>
+</html>

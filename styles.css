@@ -1,0 +1,283 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #007bff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background-color: #007bff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+}
+
+.btn {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #003f8a;
+}
+
+.status-text {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.status-text.success {
+    color: green;
+}
+
+.status-text.error {
+    color: red;
+}
+
+/* Authentication Box */
+.auth-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Toggle Text */
+.toggle-text {
+    margin-top: 10px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* File List */
+.file-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* File Card */
+.file-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures even spacing */
+    align-items: center;
+    width: 180px; /* Adjust width to be uniform */
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.file-card .btn {
+    width: 100%; /* Makes buttons uniform in size */
+    margin-top: auto; /* Pushes the button to the bottom */
+}
+
+
+/* Search Page */
+.search-container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.search-input {
+    padding: 12px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-results {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Performance Page (Optimized for Screenshot) */
+.performance-container {
+    text-align: center;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.chart-container {
+    width: 10%; /* Smallest width */
+    max-height: 50px; /* Smallest height */
+    overflow: hidden;
+    margin: auto;
+    padding: 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Larger Heading for Visibility */
+h2, h3 {
+    font-size: 20px; /* Bigger for clarity */
+    margin: 6px 0;
+    font-weight: bold;
+}
+
+/* Smaller Text for Compact UI */
+p {
+    font-size: 12px;
+    margin: 3px 0;
+}
+
+/* Buttons & Inputs - Compact */
+.btn {
+    padding: 3px 6px;
+    font-size: 12px;
+}
+
+.search-input {
+    padding: 4px;
+    font-size: 12px;
+    width: 40%;
+}
